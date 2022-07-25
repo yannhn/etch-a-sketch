@@ -1,7 +1,3 @@
-const testDiv = document.createElement("div");
-testDiv.innerHTML = "<h2>This is created using js</h2>";
-document.body.appendChild(testDiv);
-
 const createGrid = (gridSize) => {
   const gridContainer = document.querySelector('[data-js="container"]');
   gridContainer.style.gridTemplateRows = `repeat(${gridSize}, 1fr)`;
@@ -29,10 +25,23 @@ const changeSizeButton = document.querySelector('[data-js="changeSizeButton"]');
 changeSizeButton.addEventListener("click", () => {
   const askUserInput = prompt("Enter a grid size between 1 and 100");
   const parseUserInput = parseInt(askUserInput);
-  parseUserInput >= 1 && parseUserInput <= 100
-    ? createGrid(parseUserInput)
-    : alert("You should enter a number between 1 and 100. Please try again!"),
-    window.location.reload();
+
+  const testDiv = document.createElement("p");
+  testDiv.innerHTML = `<p>Current Grid: ${parseUserInput}</p>`;
+
+  if (parseUserInput >= 1 && parseUserInput <= 100) {
+    createGrid(parseUserInput);
+    document.body.appendChild(testDiv);
+  } else {
+    alert("You should enter a number between 1 and 100. Please try again!");
+  }
+
+  //   parseUserInput >= 1 && parseUserInput <= 100
+  //     ? createGrid(parseUserInput)
+  //     : alert("You should enter a number between 1 and 100. Please try again!"),
+  //     console.log(parseUserInput);
+
+  //   document.body.appendChild(testDiv);
 });
 
 const resetButton = document.querySelector('[data-js="resetGameButton"]');
