@@ -10,6 +10,9 @@ for (let i = 0; i < 256; i++) {
   let singleDiv = document.createElement("div");
   singleDiv.style.backgroundColor = "crimson";
   gridContainer.appendChild(singleDiv);
+  singleDiv.addEventListener("mouseover", () => {
+    singleDiv.style.backgroundColor = "blue";
+  });
 }
 
 const changeSizeButton = document.querySelector('[data-js="changeSizeButton"]');
