@@ -9,11 +9,21 @@
     <script src="./app.js" defer></script>
   </head>
   <body>
-    <h1>Etch-a-sketch!</h1>
-    <div class="buttonGroup">
-      <button class="sizeButton" data-js="changeSizeButton">Change size</button>
-      <button class="resetButton" data-js="resetGameButton">Reset grid</button>
+    <div class="flexbox-container">
+      <div class="left-side">
+        <h1 class="title">Etch-a-sketch!</h1>
+        <div class="buttonGroup">
+          <button class="sizeButton" data-js="changeSizeButton">
+            Change size
+          </button>
+          <button class="resetButton" data-js="resetGameButton">
+            Reset grid
+          </button>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="container" data-js="container"></div>
+      </div>
     </div>
-    <div class="container" data-js="container"></div>
   </body>
 </html>

@@ -1,3 +1,53 @@
+body {
+  padding: 2em;
+  background-color: aliceblue;
+  box-sizing: border-box;
+}
+
+.flexbox-container {
+  display: flex;
+}
+
+.left-side {
+  flex: 1;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.buttonGroup {
+  display: flex;
+  justify-content: space-around;
+}
+
+.sizeButton {
+  padding: 1em 2em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sizeButton:hover {
+  background-color: #bad;
+}
+
+.resetButton {
+  padding: 1em 2em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.resetButton:hover {
+  background-color: #bad;
+}
+
+.right-side {
+  flex: 1;
+}
+
 .container {
   width: 500px;
   height: 500px;
