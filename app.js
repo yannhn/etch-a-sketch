@@ -10,11 +10,11 @@ const createGrid = (gridSize) => {
 
   for (let i = 0; i < gridAmount; i++) {
     let singleDiv = document.createElement("div");
-    singleDiv.style.backgroundColor = "crimson";
+    singleDiv.style.backgroundColor = "#292b2c ";
     gridContainer.appendChild(singleDiv);
 
     singleDiv.addEventListener("mouseover", () => {
-      singleDiv.style.backgroundColor = "blue";
+      singleDiv.style.backgroundColor = "#f7f7f7 ";
     });
   }
 };

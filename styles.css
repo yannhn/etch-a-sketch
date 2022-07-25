@@ -6,6 +6,7 @@ body {
 
 .flexbox-container {
   display: flex;
+  align-items: center;
 }
 
 .left-side {
@@ -19,7 +20,9 @@ body {
 
 .buttonGroup {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
 }
 
 .sizeButton {
@@ -27,10 +30,13 @@ body {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  background-color: #4285f4;
+  color: white;
+  font-size: 1.2rem;
 }
 
 .sizeButton:hover {
-  background-color: #bad;
+  background-color: #0d47a1;
 }
 
 .resetButton {
@@ -38,14 +44,25 @@ body {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  background-color: #2bbbad;
+  color: white;
+  font-size: 1.2rem;
 }
 
 .resetButton:hover {
-  background-color: #bad;
+  background-color: #00695c;
 }
 
 .right-side {
   flex: 1;
+}
+
+.container-outline {
+  width: 600px;
+  height: 600px;
+  background-color: #d9534f;
+  margin: 0 auto;
+  border-radius: 10px;
 }
 
 .container {
