@@ -3,7 +3,7 @@ testDiv.innerHTML = "<h2>This is created using js</h2>";
 document.body.appendChild(testDiv);
 
 const createGrid = (gridSize) => {
-  const gridContainer = document.querySelector(`[data-js="container"]`);
+  const gridContainer = document.querySelector('[data-js="container"]');
   gridContainer.style.gridTemplateRows = `repeat(${gridSize}, 1fr)`;
   gridContainer.style.gridTemplateColumns = `repeat(${gridSize}, 1fr)`;
 
@@ -27,9 +27,15 @@ createGrid(16);
 
 const changeSizeButton = document.querySelector('[data-js="changeSizeButton"]');
 changeSizeButton.addEventListener("click", () => {
-  const askUserInput = prompt("Enter grid size");
+  const askUserInput = prompt("Enter a grid size between 1 and 100");
   const parseUserInput = parseInt(askUserInput);
-  parseUserInput <= 100
+  parseUserInput >= 1 && parseUserInput <= 100
     ? createGrid(parseUserInput)
-    : alert("your number is too big");
+    : alert("You should enter a number between 1 and 100. Please try again!"),
+    window.location.reload();
+});
+
+const resetButton = document.querySelector('[data-js="resetGameButton"]');
+resetButton.addEventListener("click", () => {
+  window.location.reload();
 });
