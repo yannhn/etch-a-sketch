@@ -1,28 +1,42 @@
 body {
   padding: 2em;
-  background-color: aliceblue;
+  background-color: #eeeeee;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
 .flexbox-container {
   display: flex;
   align-items: center;
+  padding: 5em;
 }
 
 .left-side {
   flex: 1;
 }
 
-.title {
-  text-align: center;
+.titleGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.subTitle {
   margin-bottom: 2em;
+  background-color: #292b2c;
+  color: #f7f7f7;
+  padding: 0.8em;
+  border-radius: 10px;
 }
 
 .buttonGroup {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
   gap: 2em;
+  padding: 1em;
 }
 
 .sizeButton {
@@ -58,11 +72,8 @@ body {
 }
 
 .container-outline {
-  width: 600px;
-  height: 600px;
-  background-color: #d9534f;
-  margin: 0 auto;
-  border-radius: 10px;
+  border-radius: 25px;
+  border: 4px solid #4b515d;
 }
 
 .container {
@@ -70,4 +81,5 @@ body {
   height: 500px;
   display: grid;
   margin: 0 auto;
+  padding: 2em;
 }
