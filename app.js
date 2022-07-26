@@ -26,8 +26,8 @@ changeSizeButton.addEventListener("click", () => {
   const askUserInput = prompt("Enter a grid size between 1 and 100");
   const parseUserInput = parseInt(askUserInput);
 
-  const testDiv = document.querySelector('[data-js="gridSizeInput"]');
-  testDiv.innerHTML = `<p>Current Grid: ${parseUserInput}</p>`;
+  const gridSizeInput = document.querySelector('[data-js="gridSizeInput"]');
+  gridSizeInput.innerHTML = `Current grid size: ${parseUserInput} x ${parseUserInput}`;
 
   if (parseUserInput >= 1 && parseUserInput <= 100) {
     createGrid(parseUserInput);

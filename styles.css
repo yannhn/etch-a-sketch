@@ -58,13 +58,13 @@ body {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  background-color: #2bbbad;
+  background-color: #ff4444;
   color: white;
   font-size: 1.2rem;
 }
 
 .resetButton:hover {
-  background-color: #00695c;
+  background-color: #cc0000;
 }
 
 .right-side {
@@ -82,4 +82,13 @@ body {
   display: grid;
   margin: 0 auto;
   padding: 2em;
+}
+
+.gridSizeInput {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  background-color: #4b515d;
+  color: white;
+  font-size: 1.4rem;
 }
