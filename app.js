@@ -35,13 +35,6 @@ changeSizeButton.addEventListener("click", () => {
   } else {
     alert("You should enter a number between 1 and 100. Please try again!");
   }
-
-  //   parseUserInput >= 1 && parseUserInput <= 100
-  //     ? createGrid(parseUserInput)
-  //     : alert("You should enter a number between 1 and 100. Please try again!"),
-  //     console.log(parseUserInput);
-
-  //   document.body.appendChild(testDiv);
 });
 
 const resetButton = document.querySelector('[data-js="resetGameButton"]');
