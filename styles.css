@@ -1,5 +1,4 @@
 body {
-  padding: 2em;
   background-color: #eeeeee;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
@@ -10,7 +9,7 @@ body {
 .flexbox-container {
   display: flex;
   align-items: center;
-  padding: 5em;
+  padding: 2em;
 }
 
 .left-side {

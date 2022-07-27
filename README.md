@@ -1,6 +1,6 @@
 # etch-a-sketch
 
-Coded a small etch-a-sketch game as part of the Odin Project Curriculum. Used bootstrap to style the ui.
+Coded a small etch-a-sketch game as part of the Odin Project Curriculum.
 
 ## Used technology
 
@@ -12,4 +12,4 @@ Coded a small etch-a-sketch game as part of the Odin Project Curriculum. Used bo
 
 <hr>
 
-BILD
+![example](./img_readme/img_readme.png)
