@@ -40,21 +40,25 @@ body {
 }
 
 .sizeButton {
-  padding: 1em 2em;
+  padding: 0.8em 2em;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  background-color: #4285f4;
+  background-color: #2bbbad;
   color: white;
   font-size: 1.2rem;
 }
 
 .sizeButton:hover {
-  background-color: #0d47a1;
+  background-color: #00695c;
+}
+
+.sizeButton:active {
+  background-color: #bad;
 }
 
 .resetButton {
-  padding: 1em 2em;
+  padding: 0.8em 2em;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -67,12 +71,16 @@ body {
   background-color: #cc0000;
 }
 
+.resetButton:active {
+  background-color: #bad;
+}
+
 .right-side {
   flex: 1;
 }
 
 .container-outline {
-  border-radius: 25px;
+  border-radius: 15px;
   border: 4px solid #4b515d;
 }
 
@@ -91,4 +99,5 @@ body {
   background-color: #4b515d;
   color: white;
   font-size: 1.4rem;
+  padding: 1em 0;
 }

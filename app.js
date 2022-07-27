@@ -34,6 +34,7 @@ changeSizeButton.addEventListener("click", () => {
     document.body.appendChild(testDiv);
   } else {
     alert("You should enter a number between 1 and 100. Please try again!");
+    gridSizeInput.innerHTML = `Please enter a number between 1 and 100.`;
   }
 });
 
