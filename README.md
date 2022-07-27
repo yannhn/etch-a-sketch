@@ -1,6 +1,6 @@
 # etch-a-sketch
 
-Coded a small etch-a-sketch game as part of the Odin Project Curriculum.
+I coded a small etch-a-sketch game as part of the Odin Project Curriculum.
 
 ## Used technology
 
